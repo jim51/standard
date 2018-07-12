@@ -1,1 +1,14 @@
-Total Issues: 0
+Compat issues with assembly netstandard:
+CannotRemoveBaseTypeOrInterface : Type 'System.Runtime.CompilerServices.ConditionalWeakTable<TKey, TValue>' does not implement interface 'System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<TKey, TValue>>' in the implementation but it does in the contract.
+MembersMustExist : Member 'System.Runtime.CompilerServices.ConditionalWeakTable<TKey, TValue>.AddOrUpdate(TKey, TValue)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Runtime.CompilerServices.ConditionalWeakTable<TKey, TValue>.Clear()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Runtime.CompilerServices.RuntimeHelpers.GetUninitializedObject(System.Type)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Runtime.InteropServices.Marshal.GenerateGuidForType(System.Type)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Runtime.InteropServices.Marshal.GenerateProgIdForType(System.Type)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Runtime.InteropServices.Marshal.GetComObjectData(System.Object, System.Object)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Runtime.InteropServices.Marshal.GetHINSTANCE(System.Reflection.Module)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Runtime.InteropServices.Marshal.GetIDispatchForObject(System.Object)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Runtime.InteropServices.Marshal.GetTypedObjectForIUnknown(System.IntPtr, System.Type)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Runtime.InteropServices.Marshal.SetComObjectData(System.Object, System.Object, System.Object)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Runtime.InteropServices.Marshal.StringToCoTaskMemUTF8(System.String)' does not exist in the implementation but it does exist in the contract.
+Total Issues: 12

@@ -33,6 +33,7 @@ namespace System.Runtime
     {
         public MemoryFailPoint(int sizeInMegabytes) { }
         public void Dispose() { }
+        ~MemoryFailPoint() { }
     }
     [System.AttributeUsageAttribute((System.AttributeTargets)(96), AllowMultiple=false, Inherited=false)]
     public sealed partial class TargetedPatchingOptOutAttribute : System.Attribute
