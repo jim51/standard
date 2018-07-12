@@ -66,3 +66,5 @@ T:System.Runtime.InteropServices.MemoryMarshal
 T:System.Span`1
 T:System.Threading.Tasks.ValueTask
 T:System.Threading.Tasks.ValueTask`1
+T:System.HashCode
+T:System.MathF
