@@ -50,6 +50,7 @@ namespace System.Reflection
         public virtual System.IO.FileStream GetFile(string name) { throw null; }
         public virtual System.IO.FileStream[] GetFiles() { throw null; }
         public virtual System.IO.FileStream[] GetFiles(bool getResourceModules) { throw null; }
+        public virtual System.Type[] GetForwardedTypes() { throw null; }
         public override int GetHashCode() { throw null; }
         public System.Reflection.Module[] GetLoadedModules() { throw null; }
         public virtual System.Reflection.Module[] GetLoadedModules(bool getResourceModules) { throw null; }
@@ -160,6 +161,12 @@ namespace System.Reflection
     {
         public AssemblyDescriptionAttribute(string description) { }
         public string Description { get { throw null; } }
+    }
+    public static partial class AssemblyExtensions
+    {
+        public static System.Type[] GetExportedTypes(this System.Reflection.Assembly assembly) { throw null; }
+        public static System.Reflection.Module[] GetModules(this System.Reflection.Assembly assembly) { throw null; }
+        public static System.Type[] GetTypes(this System.Reflection.Assembly assembly) { throw null; }
     }
     [System.AttributeUsageAttribute((System.AttributeTargets)(1), Inherited=false)]
     public sealed partial class AssemblyFileVersionAttribute : System.Attribute
@@ -295,6 +302,7 @@ namespace System.Reflection
         CreateInstance = 512,
         DeclaredOnly = 2,
         Default = 0,
+        DoNotWrapExceptions = 33554432,
         ExactBinding = 65536,
         FlattenHierarchy = 64,
         GetField = 1024,
@@ -430,6 +438,12 @@ namespace System.Reflection
         public DefaultMemberAttribute(string memberName) { }
         public string MemberName { get { throw null; } }
     }
+    public abstract partial class DispatchProxy
+    {
+        protected DispatchProxy() { }
+        public static T Create<T, TProxy>() where TProxy : System.Reflection.DispatchProxy { throw null; }
+        protected abstract object Invoke(System.Reflection.MethodInfo targetMethod, object[] args);
+    }
     [System.FlagsAttribute]
     public enum EventAttributes
     {
@@ -463,6 +477,15 @@ namespace System.Reflection
         public static bool operator ==(System.Reflection.EventInfo left, System.Reflection.EventInfo right) { throw null; }
         public static bool operator !=(System.Reflection.EventInfo left, System.Reflection.EventInfo right) { throw null; }
         public virtual void RemoveEventHandler(object target, System.Delegate handler) { }
+    }
+    public static partial class EventInfoExtensions
+    {
+        public static System.Reflection.MethodInfo GetAddMethod(this System.Reflection.EventInfo eventInfo) { throw null; }
+        public static System.Reflection.MethodInfo GetAddMethod(this System.Reflection.EventInfo eventInfo, bool nonPublic) { throw null; }
+        public static System.Reflection.MethodInfo GetRaiseMethod(this System.Reflection.EventInfo eventInfo) { throw null; }
+        public static System.Reflection.MethodInfo GetRaiseMethod(this System.Reflection.EventInfo eventInfo, bool nonPublic) { throw null; }
+        public static System.Reflection.MethodInfo GetRemoveMethod(this System.Reflection.EventInfo eventInfo) { throw null; }
+        public static System.Reflection.MethodInfo GetRemoveMethod(this System.Reflection.EventInfo eventInfo, bool nonPublic) { throw null; }
     }
     public partial class ExceptionHandlingClause
     {
@@ -640,9 +663,15 @@ namespace System.Reflection
         public abstract object[] GetCustomAttributes(System.Type attributeType, bool inherit);
         public virtual System.Collections.Generic.IList<System.Reflection.CustomAttributeData> GetCustomAttributesData() { throw null; }
         public override int GetHashCode() { throw null; }
+        public virtual bool HasSameMetadataDefinitionAs(System.Reflection.MemberInfo other) { throw null; }
         public abstract bool IsDefined(System.Type attributeType, bool inherit);
         public static bool operator ==(System.Reflection.MemberInfo left, System.Reflection.MemberInfo right) { throw null; }
         public static bool operator !=(System.Reflection.MemberInfo left, System.Reflection.MemberInfo right) { throw null; }
+    }
+    public static partial class MemberInfoExtensions
+    {
+        public static int GetMetadataToken(this System.Reflection.MemberInfo member) { throw null; }
+        public static bool HasMetadataToken(this System.Reflection.MemberInfo member) { throw null; }
     }
     [System.FlagsAttribute]
     public enum MemberTypes
@@ -693,6 +722,7 @@ namespace System.Reflection
         public virtual bool ContainsGenericParameters { get { throw null; } }
         public bool IsAbstract { get { throw null; } }
         public bool IsAssembly { get { throw null; } }
+        public virtual bool IsConstructedGenericMethod { get { throw null; } }
         public bool IsConstructor { get { throw null; } }
         public bool IsFamily { get { throw null; } }
         public bool IsFamilyAndAssembly { get { throw null; } }
@@ -772,6 +802,10 @@ namespace System.Reflection
         public static bool operator ==(System.Reflection.MethodInfo left, System.Reflection.MethodInfo right) { throw null; }
         public static bool operator !=(System.Reflection.MethodInfo left, System.Reflection.MethodInfo right) { throw null; }
     }
+    public static partial class MethodInfoExtensions
+    {
+        public static System.Reflection.MethodInfo GetBaseDefinition(this System.Reflection.MethodInfo method) { throw null; }
+    }
     public sealed partial class Missing : System.Runtime.Serialization.ISerializable
     {
         internal Missing() { }
@@ -829,6 +863,11 @@ namespace System.Reflection
         public System.Type ResolveType(int metadataToken) { throw null; }
         public virtual System.Type ResolveType(int metadataToken, System.Type[] genericTypeArguments, System.Type[] genericMethodArguments) { throw null; }
         public override string ToString() { throw null; }
+    }
+    public static partial class ModuleExtensions
+    {
+        public static System.Guid GetModuleVersionId(this System.Reflection.Module module) { throw null; }
+        public static bool HasModuleVersionId(this System.Reflection.Module module) { throw null; }
     }
     public delegate System.Reflection.Module ModuleResolveEventHandler(object sender, System.ResolveEventArgs e);
     [System.AttributeUsageAttribute((System.AttributeTargets)(1), AllowMultiple=false, Inherited=false)]
@@ -973,6 +1012,15 @@ namespace System.Reflection
         public virtual void SetValue(object obj, object value, object[] index) { }
         public abstract void SetValue(object obj, object value, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, object[] index, System.Globalization.CultureInfo culture);
     }
+    public static partial class PropertyInfoExtensions
+    {
+        public static System.Reflection.MethodInfo[] GetAccessors(this System.Reflection.PropertyInfo property) { throw null; }
+        public static System.Reflection.MethodInfo[] GetAccessors(this System.Reflection.PropertyInfo property, bool nonPublic) { throw null; }
+        public static System.Reflection.MethodInfo GetGetMethod(this System.Reflection.PropertyInfo property) { throw null; }
+        public static System.Reflection.MethodInfo GetGetMethod(this System.Reflection.PropertyInfo property, bool nonPublic) { throw null; }
+        public static System.Reflection.MethodInfo GetSetMethod(this System.Reflection.PropertyInfo property) { throw null; }
+        public static System.Reflection.MethodInfo GetSetMethod(this System.Reflection.PropertyInfo property, bool nonPublic) { throw null; }
+    }
     public abstract partial class ReflectionContext
     {
         protected ReflectionContext() { }
@@ -1091,6 +1139,11 @@ namespace System.Reflection
         public override System.Guid GUID { get { throw null; } }
         public override bool IsByRefLike { get { throw null; } }
         public override bool IsConstructedGenericType { get { throw null; } }
+        public override bool IsGenericMethodParameter { get { throw null; } }
+        public override bool IsGenericTypeParameter { get { throw null; } }
+        public override bool IsSZArray { get { throw null; } }
+        public override bool IsTypeDefinition { get { throw null; } }
+        public override bool IsVariableBoundArray { get { throw null; } }
         public override int MetadataToken { get { throw null; } }
         public override System.Reflection.Module Module { get { throw null; } }
         public override string Name { get { throw null; } }
@@ -1129,6 +1182,42 @@ namespace System.Reflection
         protected override bool IsPointerImpl() { throw null; }
         protected override bool IsPrimitiveImpl() { throw null; }
         protected override bool IsValueTypeImpl() { throw null; }
+    }
+    public static partial class TypeExtensions
+    {
+        public static System.Reflection.ConstructorInfo GetConstructor(this System.Type type, System.Type[] types) { throw null; }
+        public static System.Reflection.ConstructorInfo[] GetConstructors(this System.Type type) { throw null; }
+        public static System.Reflection.ConstructorInfo[] GetConstructors(this System.Type type, System.Reflection.BindingFlags bindingAttr) { throw null; }
+        public static System.Reflection.MemberInfo[] GetDefaultMembers(this System.Type type) { throw null; }
+        public static System.Reflection.EventInfo GetEvent(this System.Type type, string name) { throw null; }
+        public static System.Reflection.EventInfo GetEvent(this System.Type type, string name, System.Reflection.BindingFlags bindingAttr) { throw null; }
+        public static System.Reflection.EventInfo[] GetEvents(this System.Type type) { throw null; }
+        public static System.Reflection.EventInfo[] GetEvents(this System.Type type, System.Reflection.BindingFlags bindingAttr) { throw null; }
+        public static System.Reflection.FieldInfo GetField(this System.Type type, string name) { throw null; }
+        public static System.Reflection.FieldInfo GetField(this System.Type type, string name, System.Reflection.BindingFlags bindingAttr) { throw null; }
+        public static System.Reflection.FieldInfo[] GetFields(this System.Type type) { throw null; }
+        public static System.Reflection.FieldInfo[] GetFields(this System.Type type, System.Reflection.BindingFlags bindingAttr) { throw null; }
+        public static System.Type[] GetGenericArguments(this System.Type type) { throw null; }
+        public static System.Type[] GetInterfaces(this System.Type type) { throw null; }
+        public static System.Reflection.MemberInfo[] GetMember(this System.Type type, string name) { throw null; }
+        public static System.Reflection.MemberInfo[] GetMember(this System.Type type, string name, System.Reflection.BindingFlags bindingAttr) { throw null; }
+        public static System.Reflection.MemberInfo[] GetMembers(this System.Type type) { throw null; }
+        public static System.Reflection.MemberInfo[] GetMembers(this System.Type type, System.Reflection.BindingFlags bindingAttr) { throw null; }
+        public static System.Reflection.MethodInfo GetMethod(this System.Type type, string name) { throw null; }
+        public static System.Reflection.MethodInfo GetMethod(this System.Type type, string name, System.Reflection.BindingFlags bindingAttr) { throw null; }
+        public static System.Reflection.MethodInfo GetMethod(this System.Type type, string name, System.Type[] types) { throw null; }
+        public static System.Reflection.MethodInfo[] GetMethods(this System.Type type) { throw null; }
+        public static System.Reflection.MethodInfo[] GetMethods(this System.Type type, System.Reflection.BindingFlags bindingAttr) { throw null; }
+        public static System.Type GetNestedType(this System.Type type, string name, System.Reflection.BindingFlags bindingAttr) { throw null; }
+        public static System.Type[] GetNestedTypes(this System.Type type, System.Reflection.BindingFlags bindingAttr) { throw null; }
+        public static System.Reflection.PropertyInfo[] GetProperties(this System.Type type) { throw null; }
+        public static System.Reflection.PropertyInfo[] GetProperties(this System.Type type, System.Reflection.BindingFlags bindingAttr) { throw null; }
+        public static System.Reflection.PropertyInfo GetProperty(this System.Type type, string name) { throw null; }
+        public static System.Reflection.PropertyInfo GetProperty(this System.Type type, string name, System.Reflection.BindingFlags bindingAttr) { throw null; }
+        public static System.Reflection.PropertyInfo GetProperty(this System.Type type, string name, System.Type returnType) { throw null; }
+        public static System.Reflection.PropertyInfo GetProperty(this System.Type type, string name, System.Type returnType, System.Type[] types) { throw null; }
+        public static bool IsAssignableFrom(this System.Type type, System.Type c) { throw null; }
+        public static bool IsInstanceOfType(this System.Type type, object o) { throw null; }
     }
     public delegate bool TypeFilter(System.Type m, object filterCriteria);
     public abstract partial class TypeInfo : System.Type, System.Reflection.IReflectableType

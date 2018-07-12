@@ -24,3 +24,11 @@ T:System.Threading.Tasks.Sources.IValueTaskSource`1
 T:System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags
 T:System.Threading.Tasks.Sources.ValueTaskSourceStatus
 T:System.Threading.Tasks.ValueTask
+T:System.Reflection.AssemblyExtensions
+T:System.Reflection.DispatchProxy
+T:System.Reflection.EventInfoExtensions
+T:System.Reflection.MemberInfoExtensions
+T:System.Reflection.MethodInfoExtensions
+T:System.Reflection.ModuleExtensions
+T:System.Reflection.PropertyInfoExtensions
+T:System.Reflection.TypeExtensions

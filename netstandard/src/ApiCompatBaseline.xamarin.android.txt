@@ -136,7 +136,18 @@ MembersMustExist : Member 'System.TimeSpan.TryParseExact(System.ReadOnlySpan<Sys
 MembersMustExist : Member 'System.TimeSpan.TryParseExact(System.ReadOnlySpan<System.Char>, System.String[], System.IFormatProvider, System.Globalization.TimeSpanStyles, System.TimeSpan)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.TimeSpan.TryParseExact(System.ReadOnlySpan<System.Char>, System.String[], System.IFormatProvider, System.TimeSpan)' does not exist in the implementation but it does exist in the contract.
 TypeCannotChangeClassification : Type 'System.TimeZoneInfo.TransitionTime' is marked as readonly in the contract so it must also be marked readonly in the implementation.
+MembersMustExist : Member 'System.Type.GetMethod(System.String, System.Int32, System.Reflection.BindingFlags, System.Reflection.Binder, System.Reflection.CallingConventions, System.Type[], System.Reflection.ParameterModifier[])' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Type.GetMethod(System.String, System.Int32, System.Reflection.BindingFlags, System.Reflection.Binder, System.Type[], System.Reflection.ParameterModifier[])' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Type.GetMethod(System.String, System.Int32, System.Type[])' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Type.GetMethod(System.String, System.Int32, System.Type[], System.Reflection.ParameterModifier[])' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Type.GetMethodImpl(System.String, System.Int32, System.Reflection.BindingFlags, System.Reflection.Binder, System.Reflection.CallingConventions, System.Type[], System.Reflection.ParameterModifier[])' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.Type.IsByRefLike.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Type.IsGenericMethodParameter.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Type.IsGenericTypeParameter.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Type.IsSignatureType.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Type.IsTypeDefinition.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Type.IsVariableBoundArray.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Type.MakeGenericMethodParameter(System.Int32)' does not exist in the implementation but it does exist in the contract.
 TypeCannotChangeClassification : Type 'System.TypedReference' is a 'struct' in the implementation but is a 'ref struct' in the contract.
 MembersMustExist : Member 'System.UInt16.Parse(System.ReadOnlySpan<System.Char>, System.Globalization.NumberStyles, System.IFormatProvider)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.UInt16.TryFormat(System.Span<System.Char>, System.Int32, System.ReadOnlySpan<System.Char>, System.IFormatProvider)' does not exist in the implementation but it does exist in the contract.
@@ -233,8 +244,24 @@ MembersMustExist : Member 'System.Net.Sockets.SocketAsyncEventArgs.SetBuffer(Sys
 MembersMustExist : Member 'System.Net.Sockets.SocketTaskExtensions.ReceiveAsync(System.Net.Sockets.Socket, System.Memory<System.Byte>, System.Net.Sockets.SocketFlags, System.Threading.CancellationToken)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.Net.Sockets.SocketTaskExtensions.SendAsync(System.Net.Sockets.Socket, System.ReadOnlyMemory<System.Byte>, System.Net.Sockets.SocketFlags, System.Threading.CancellationToken)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.Net.WebSockets.WebSocket.SendAsync(System.ReadOnlyMemory<System.Byte>, System.Net.WebSockets.WebSocketMessageType, System.Boolean, System.Threading.CancellationToken)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Reflection.Assembly.GetForwardedTypes()' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'System.Reflection.AssemblyExtensions' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Reflection.BindingFlags System.Reflection.BindingFlags.DoNotWrapExceptions' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'System.Reflection.DispatchProxy' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'System.Reflection.EventInfoExtensions' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Reflection.MemberInfo.HasSameMetadataDefinitionAs(System.Reflection.MemberInfo)' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'System.Reflection.MemberInfoExtensions' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Reflection.MethodBase.IsConstructedGenericMethod.get()' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'System.Reflection.MethodInfoExtensions' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'System.Reflection.ModuleExtensions' does not exist in the implementation but it does exist in the contract.
 TypeCannotChangeClassification : Type 'System.Reflection.ParameterModifier' is marked as readonly in the contract so it must also be marked readonly in the implementation.
+TypesMustExist : Type 'System.Reflection.PropertyInfoExtensions' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.Reflection.TypeDelegator.IsByRefLike.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Reflection.TypeDelegator.IsGenericMethodParameter.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Reflection.TypeDelegator.IsGenericTypeParameter.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Reflection.TypeDelegator.IsTypeDefinition.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Reflection.TypeDelegator.IsVariableBoundArray.get()' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'System.Reflection.TypeExtensions' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder' does not exist in the implementation but it does exist in the contract.
 TypeCannotChangeClassification : Type 'System.Runtime.CompilerServices.ConfiguredTaskAwaitable' is marked as readonly in the contract so it must also be marked readonly in the implementation.
 TypeCannotChangeClassification : Type 'System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter' is marked as readonly in the contract so it must also be marked readonly in the implementation.
@@ -335,4 +362,4 @@ TypesMustExist : Type 'System.Threading.Tasks.Sources.IValueTaskSource' does not
 TypesMustExist : Type 'System.Threading.Tasks.Sources.IValueTaskSource<TResult>' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Threading.Tasks.Sources.ValueTaskSourceStatus' does not exist in the implementation but it does exist in the contract.
-Total Issues: 336
+Total Issues: 363

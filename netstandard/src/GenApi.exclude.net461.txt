@@ -66,3 +66,11 @@ T:System.Runtime.InteropServices.MemoryMarshal
 T:System.Span`1
 T:System.Threading.Tasks.ValueTask
 T:System.Threading.Tasks.ValueTask`1
+T:System.Reflection.AssemblyExtensions
+T:System.Reflection.DispatchProxy
+T:System.Reflection.EventInfoExtensions
+T:System.Reflection.MemberInfoExtensions
+T:System.Reflection.MethodInfoExtensions
+T:System.Reflection.ModuleExtensions
+T:System.Reflection.PropertyInfoExtensions
+T:System.Reflection.TypeExtensions

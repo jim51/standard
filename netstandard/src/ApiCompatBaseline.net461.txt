@@ -108,7 +108,19 @@ MembersMustExist : Member 'System.TimeSpan.TryParseExact(System.ReadOnlySpan<Sys
 MembersMustExist : Member 'System.TimeSpan.TryParseExact(System.ReadOnlySpan<System.Char>, System.String[], System.IFormatProvider, System.Globalization.TimeSpanStyles, System.TimeSpan)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.TimeSpan.TryParseExact(System.ReadOnlySpan<System.Char>, System.String[], System.IFormatProvider, System.TimeSpan)' does not exist in the implementation but it does exist in the contract.
 TypeCannotChangeClassification : Type 'System.TimeZoneInfo.TransitionTime' is marked as readonly in the contract so it must also be marked readonly in the implementation.
+MembersMustExist : Member 'System.Type.GetMethod(System.String, System.Int32, System.Reflection.BindingFlags, System.Reflection.Binder, System.Reflection.CallingConventions, System.Type[], System.Reflection.ParameterModifier[])' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Type.GetMethod(System.String, System.Int32, System.Reflection.BindingFlags, System.Reflection.Binder, System.Type[], System.Reflection.ParameterModifier[])' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Type.GetMethod(System.String, System.Int32, System.Type[])' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Type.GetMethod(System.String, System.Int32, System.Type[], System.Reflection.ParameterModifier[])' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Type.GetMethodImpl(System.String, System.Int32, System.Reflection.BindingFlags, System.Reflection.Binder, System.Reflection.CallingConventions, System.Type[], System.Reflection.ParameterModifier[])' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.Type.IsByRefLike.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Type.IsGenericMethodParameter.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Type.IsGenericTypeParameter.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Type.IsSignatureType.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Type.IsSZArray.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Type.IsTypeDefinition.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Type.IsVariableBoundArray.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Type.MakeGenericMethodParameter(System.Int32)' does not exist in the implementation but it does exist in the contract.
 TypeCannotChangeClassification : Type 'System.TypedReference' is a 'struct' in the implementation but is a 'ref struct' in the contract.
 MembersMustExist : Member 'System.UInt16.Parse(System.ReadOnlySpan<System.Char>, System.Globalization.NumberStyles, System.IFormatProvider)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.UInt16.TryFormat(System.Span<System.Char>, System.Int32, System.ReadOnlySpan<System.Char>, System.IFormatProvider)' does not exist in the implementation but it does exist in the contract.
@@ -254,8 +266,25 @@ MembersMustExist : Member 'System.Numerics.BigInteger.TryFormat(System.Span<Syst
 MembersMustExist : Member 'System.Numerics.BigInteger.TryParse(System.ReadOnlySpan<System.Char>, System.Globalization.NumberStyles, System.IFormatProvider, System.Numerics.BigInteger)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.Numerics.BigInteger.TryParse(System.ReadOnlySpan<System.Char>, System.Numerics.BigInteger)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.Numerics.BigInteger.TryWriteBytes(System.Span<System.Byte>, System.Int32, System.Boolean, System.Boolean)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Reflection.Assembly.GetForwardedTypes()' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'System.Reflection.AssemblyExtensions' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Reflection.BindingFlags System.Reflection.BindingFlags.DoNotWrapExceptions' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'System.Reflection.DispatchProxy' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'System.Reflection.EventInfoExtensions' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Reflection.MemberInfo.HasSameMetadataDefinitionAs(System.Reflection.MemberInfo)' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'System.Reflection.MemberInfoExtensions' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Reflection.MethodBase.IsConstructedGenericMethod.get()' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'System.Reflection.MethodInfoExtensions' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'System.Reflection.ModuleExtensions' does not exist in the implementation but it does exist in the contract.
 TypeCannotChangeClassification : Type 'System.Reflection.ParameterModifier' is marked as readonly in the contract so it must also be marked readonly in the implementation.
+TypesMustExist : Type 'System.Reflection.PropertyInfoExtensions' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.Reflection.TypeDelegator.IsByRefLike.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Reflection.TypeDelegator.IsGenericMethodParameter.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Reflection.TypeDelegator.IsGenericTypeParameter.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Reflection.TypeDelegator.IsSZArray.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Reflection.TypeDelegator.IsTypeDefinition.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Reflection.TypeDelegator.IsVariableBoundArray.get()' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'System.Reflection.TypeExtensions' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Runtime.CompilerServices.AsyncMethodBuilderAttribute' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder<TResult>' does not exist in the implementation but it does exist in the contract.
@@ -367,4 +396,4 @@ TypesMustExist : Type 'System.Threading.Tasks.Sources.IValueTaskSource<TResult>'
 TypesMustExist : Type 'System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Threading.Tasks.Sources.ValueTaskSourceStatus' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Xml.XPath.XDocumentExtensions' does not exist in the implementation but it does exist in the contract.
-Total Issues: 368
+Total Issues: 397
