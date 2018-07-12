@@ -1,1 +1,8 @@
-Total Issues: 0
+Compat issues with assembly netstandard:
+MembersMustExist : Member 'System.Collections.BitArray.LeftShift(System.Int32)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Collections.BitArray.RightShift(System.Int32)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Collections.Generic.Dictionary<TKey, TValue>.TrimExcess()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Collections.Generic.Dictionary<TKey, TValue>.TrimExcess(System.Int32)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Collections.Generic.HashSet<T>.EnsureCapacity(System.Int32)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Collections.ObjectModel.KeyedCollection<TKey, TItem>.TryGetValue(TKey, TItem)' does not exist in the implementation but it does exist in the contract.
+Total Issues: 6

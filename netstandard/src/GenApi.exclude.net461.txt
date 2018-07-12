@@ -22,3 +22,5 @@ T:System.Security.Cryptography.TripleDESCng
 T:System.Threading.PreAllocatedOverlapped
 T:System.Threading.ThreadPoolBoundHandle
 T:System.Xml.XPath.XDocumentExtensions
+T:System.Collections.Generic.CollectionExtensions
+T:System.Collections.Generic.KeyValuePair
