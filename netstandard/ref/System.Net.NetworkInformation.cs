@@ -315,10 +315,16 @@ namespace System.Net.NetworkInformation
         internal NetworkAvailabilityEventArgs() { }
         public bool IsAvailable { get { throw null; } }
     }
-    public static partial class NetworkChange
+    public partial class NetworkChange
     {
+        [System.ComponentModel.EditorBrowsableAttribute((System.ComponentModel.EditorBrowsableState)(1))]
+        [System.ObsoleteAttribute("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)]
+        public NetworkChange() { }
         public static event System.Net.NetworkInformation.NetworkAddressChangedEventHandler NetworkAddressChanged { add { } remove { } }
         public static event System.Net.NetworkInformation.NetworkAvailabilityChangedEventHandler NetworkAvailabilityChanged { add { } remove { } }
+        [System.ComponentModel.EditorBrowsableAttribute((System.ComponentModel.EditorBrowsableState)(1))]
+        [System.ObsoleteAttribute("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)]
+        public static void RegisterNetworkChange(System.Net.NetworkInformation.NetworkChange nc) { }
     }
     public partial class NetworkInformationException : System.ComponentModel.Win32Exception
     {

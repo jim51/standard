@@ -142,9 +142,11 @@ namespace System.Net.Sockets
         public override void Flush() { }
         public override System.Threading.Tasks.Task FlushAsync(System.Threading.CancellationToken cancellationToken) { throw null; }
         public override int Read(byte[] buffer, int offset, int size) { buffer = default(byte[]); throw null; }
+        public override System.Threading.Tasks.Task<int> ReadAsync(byte[] buffer, int offset, int size, System.Threading.CancellationToken cancellationToken) { throw null; }
         public override long Seek(long offset, System.IO.SeekOrigin origin) { throw null; }
         public override void SetLength(long value) { }
         public override void Write(byte[] buffer, int offset, int size) { }
+        public override System.Threading.Tasks.Task WriteAsync(byte[] buffer, int offset, int size, System.Threading.CancellationToken cancellationToken) { throw null; }
     }
     public enum ProtocolFamily
     {
@@ -476,8 +478,6 @@ namespace System.Net.Sockets
         Broadcast = 1024,
         ControlDataTruncated = 512,
         DontRoute = 4,
-// Enum value isn't used but keeping commented out so we don't reuse the slot in the future
-//        MaxIOVectorLength = 16,
         Multicast = 2048,
         None = 0,
         OutOfBand = 1,
@@ -557,12 +557,14 @@ namespace System.Net.Sockets
         UseLoopback = 64,
     }
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Never)]
+    [System.Runtime.InteropServices.StructLayoutAttribute(System.Runtime.InteropServices.LayoutKind.Sequential)]
     public struct SocketReceiveFromResult
     {
         public int ReceivedBytes;
         public EndPoint RemoteEndPoint;
     }
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Never)]
+    [System.Runtime.InteropServices.StructLayoutAttribute(System.Runtime.InteropServices.LayoutKind.Sequential)]
     public struct SocketReceiveMessageFromResult
     {
         public int ReceivedBytes;
@@ -733,7 +735,7 @@ namespace System.Net.Sockets
     [System.Runtime.InteropServices.StructLayoutAttribute(System.Runtime.InteropServices.LayoutKind.Sequential)]
     public partial struct UdpReceiveResult : System.IEquatable<System.Net.Sockets.UdpReceiveResult>
     {
-        public UdpReceiveResult(byte[] buffer, System.Net.IPEndPoint remoteEndPoint) { throw null;}
+        public UdpReceiveResult(byte[] buffer, System.Net.IPEndPoint remoteEndPoint) { throw null; }
         public byte[] Buffer { get { throw null; } }
         public System.Net.IPEndPoint RemoteEndPoint { get { throw null; } }
         public bool Equals(System.Net.Sockets.UdpReceiveResult other) { throw null; }
@@ -741,5 +743,9 @@ namespace System.Net.Sockets
         public override int GetHashCode() { throw null; }
         public static bool operator ==(System.Net.Sockets.UdpReceiveResult left, System.Net.Sockets.UdpReceiveResult right) { throw null; }
         public static bool operator !=(System.Net.Sockets.UdpReceiveResult left, System.Net.Sockets.UdpReceiveResult right) { throw null; }
+    }
+    public sealed partial class UnixDomainSocketEndPoint : System.Net.EndPoint
+    {
+        public UnixDomainSocketEndPoint(string path) { }
     }
 }

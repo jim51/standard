@@ -28,6 +28,7 @@ namespace System.Net.WebSockets
         public System.Net.ICredentials Credentials { get { throw null; } set { } }
         public System.TimeSpan KeepAliveInterval { get { throw null; } set { } }
         public System.Net.IWebProxy Proxy { get { throw null; } set { } }
+        public System.Net.Security.RemoteCertificateValidationCallback RemoteCertificateValidationCallback { get { throw null; } set { } }
         public bool UseDefaultCredentials { get { throw null; } set { } }
         public void AddSubProtocol(string subProtocol) { }
         public void SetBuffer(int receiveBufferSize, int sendBufferSize) { }
@@ -72,8 +73,12 @@ namespace System.Net.WebSockets
         public static System.ArraySegment<byte> CreateClientBuffer(int receiveBufferSize, int sendBufferSize) { throw null; }
         [System.ComponentModel.EditorBrowsableAttribute((System.ComponentModel.EditorBrowsableState)(1))]
         public static System.Net.WebSockets.WebSocket CreateClientWebSocket(System.IO.Stream innerStream, string subProtocol, int receiveBufferSize, int sendBufferSize, System.TimeSpan keepAliveInterval, bool useZeroMaskingKey, System.ArraySegment<byte> internalBuffer) { throw null; }
+        public static System.Net.WebSockets.WebSocket CreateFromStream(System.IO.Stream stream, bool isServer, string subProtocol, System.TimeSpan keepAliveInterval) { throw null; }
         public static System.ArraySegment<byte> CreateServerBuffer(int receiveBufferSize) { throw null; }
         public abstract void Dispose();
+        [System.ComponentModel.EditorBrowsableAttribute((System.ComponentModel.EditorBrowsableState)(1))]
+        [System.ObsoleteAttribute("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.")]
+        public static bool IsApplicationTargeting45() { throw null; }
         protected static bool IsStateTerminal(System.Net.WebSockets.WebSocketState state) { throw null; }
         public abstract System.Threading.Tasks.Task<System.Net.WebSockets.WebSocketReceiveResult> ReceiveAsync(System.ArraySegment<byte> buffer, System.Threading.CancellationToken cancellationToken);
         public virtual System.Threading.Tasks.ValueTask<System.Net.WebSockets.ValueWebSocketReceiveResult> ReceiveAsync(System.Memory<byte> buffer, System.Threading.CancellationToken cancellationToken) { throw null; }
