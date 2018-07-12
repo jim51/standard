@@ -10,7 +10,7 @@ namespace System.IO.IsolatedStorage
     }
     public abstract partial class IsolatedStorage : System.MarshalByRefObject
     {
-        internal IsolatedStorage() { }
+        protected IsolatedStorage() { }
         public object ApplicationIdentity { get { throw null; } }
         public object AssemblyIdentity { get { throw null; } }
         public virtual long AvailableFreeSpace { get { throw null; } }
@@ -62,6 +62,7 @@ namespace System.IO.IsolatedStorage
         public bool DirectoryExists(string path) { throw null; }
         public void Dispose() { }
         public bool FileExists(string path) { throw null; }
+        ~IsolatedStorageFile() { }
         public System.DateTimeOffset GetCreationTime(string path) { throw null; }
         public string[] GetDirectoryNames() { throw null; }
         public string[] GetDirectoryNames(string searchPattern) { throw null; }

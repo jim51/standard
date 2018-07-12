@@ -177,11 +177,31 @@ MembersMustExist : Member 'System.IO.BinaryReader.Read(System.Span<System.Byte>)
 MembersMustExist : Member 'System.IO.BinaryReader.Read(System.Span<System.Char>)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.IO.BinaryWriter.Write(System.ReadOnlySpan<System.Byte>)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.IO.BinaryWriter.Write(System.ReadOnlySpan<System.Char>)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.IO.BufferedStream.BufferSize.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.IO.BufferedStream.UnderlyingStream.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.IO.File.AppendAllLinesAsync(System.String, System.Collections.Generic.IEnumerable<System.String>, System.Text.Encoding, System.Threading.CancellationToken)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.IO.File.AppendAllLinesAsync(System.String, System.Collections.Generic.IEnumerable<System.String>, System.Threading.CancellationToken)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.IO.File.AppendAllTextAsync(System.String, System.String, System.Text.Encoding, System.Threading.CancellationToken)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.IO.File.AppendAllTextAsync(System.String, System.String, System.Threading.CancellationToken)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.IO.File.ReadAllBytesAsync(System.String, System.Threading.CancellationToken)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.IO.File.ReadAllLinesAsync(System.String, System.Text.Encoding, System.Threading.CancellationToken)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.IO.File.ReadAllLinesAsync(System.String, System.Threading.CancellationToken)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.IO.File.ReadAllTextAsync(System.String, System.Text.Encoding, System.Threading.CancellationToken)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.IO.File.ReadAllTextAsync(System.String, System.Threading.CancellationToken)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.IO.File.WriteAllBytesAsync(System.String, System.Byte[], System.Threading.CancellationToken)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.IO.File.WriteAllLinesAsync(System.String, System.Collections.Generic.IEnumerable<System.String>, System.Text.Encoding, System.Threading.CancellationToken)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.IO.File.WriteAllLinesAsync(System.String, System.Collections.Generic.IEnumerable<System.String>, System.Threading.CancellationToken)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.IO.File.WriteAllTextAsync(System.String, System.String, System.Text.Encoding, System.Threading.CancellationToken)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.IO.File.WriteAllTextAsync(System.String, System.String, System.Threading.CancellationToken)' does not exist in the implementation but it does exist in the contract.
+CannotMakeMemberNonVirtual : Member 'System.IO.FileStream.Name' is non-virtual in the implementation but is virtual in the contract.
+CannotMakeMemberNonVirtual : Member 'System.IO.FileStream.Name.get()' is non-virtual in the implementation but is virtual in the contract.
 MembersMustExist : Member 'System.IO.Path.GetDirectoryName(System.ReadOnlySpan<System.Char>)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.IO.Path.GetExtension(System.ReadOnlySpan<System.Char>)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.IO.Path.GetFileName(System.ReadOnlySpan<System.Char>)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.IO.Path.GetFileNameWithoutExtension(System.ReadOnlySpan<System.Char>)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.IO.Path.GetFullPath(System.String, System.String)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.IO.Path.GetPathRoot(System.ReadOnlySpan<System.Char>)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.IO.Path.GetRelativePath(System.String, System.String)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.IO.Path.HasExtension(System.ReadOnlySpan<System.Char>)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.IO.Path.IsPathFullyQualified(System.ReadOnlySpan<System.Char>)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.IO.Path.IsPathFullyQualified(System.String)' does not exist in the implementation but it does exist in the contract.
@@ -190,6 +210,7 @@ MembersMustExist : Member 'System.IO.Path.Join(System.ReadOnlySpan<System.Char>,
 MembersMustExist : Member 'System.IO.Path.Join(System.ReadOnlySpan<System.Char>, System.ReadOnlySpan<System.Char>, System.ReadOnlySpan<System.Char>)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.IO.Path.TryJoin(System.ReadOnlySpan<System.Char>, System.ReadOnlySpan<System.Char>, System.ReadOnlySpan<System.Char>, System.Span<System.Char>, System.Int32)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.IO.Path.TryJoin(System.ReadOnlySpan<System.Char>, System.ReadOnlySpan<System.Char>, System.Span<System.Char>, System.Int32)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.IO.Stream.CopyToAsync(System.IO.Stream, System.Threading.CancellationToken)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.IO.Stream.WriteAsync(System.ReadOnlyMemory<System.Byte>, System.Threading.CancellationToken)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.IO.StreamReader.Read(System.Span<System.Char>)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.IO.StreamReader.ReadAsync(System.Memory<System.Char>, System.Threading.CancellationToken)' does not exist in the implementation but it does exist in the contract.
@@ -215,6 +236,8 @@ MembersMustExist : Member 'System.IO.TextWriter.Write(System.ReadOnlySpan<System
 MembersMustExist : Member 'System.IO.TextWriter.WriteAsync(System.ReadOnlyMemory<System.Char>, System.Threading.CancellationToken)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.IO.TextWriter.WriteLine(System.ReadOnlySpan<System.Char>)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.IO.TextWriter.WriteLineAsync(System.ReadOnlyMemory<System.Char>, System.Threading.CancellationToken)' does not exist in the implementation but it does exist in the contract.
+CannotAddAbstractMembers : Member 'System.IO.IsolatedStorage.IsolatedStorage.GetPermission(System.Security.PermissionSet)' is abstract in the implementation but is missing in the contract.
+MembersMustExist : Member 'System.IO.Pipes.PipeOptions System.IO.Pipes.PipeOptions.CurrentUserOnly' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.Net.IPAddress..ctor(System.ReadOnlySpan<System.Byte>)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.Net.IPAddress..ctor(System.ReadOnlySpan<System.Byte>, System.Int64)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.Net.IPAddress.Parse(System.ReadOnlySpan<System.Char>)' does not exist in the implementation but it does exist in the contract.
@@ -335,4 +358,4 @@ TypesMustExist : Type 'System.Threading.Tasks.Sources.IValueTaskSource' does not
 TypesMustExist : Type 'System.Threading.Tasks.Sources.IValueTaskSource<TResult>' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Threading.Tasks.Sources.ValueTaskSourceStatus' does not exist in the implementation but it does exist in the contract.
-Total Issues: 336
+Total Issues: 359
