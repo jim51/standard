@@ -5,10 +5,19 @@ TypesMustExist : Type 'System.StringNormalizationExtensions' does not exist in t
 TypesMustExist : Type 'System.Data.Common.DbColumn' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Data.Common.DbDataReaderExtensions' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Data.Common.IDbColumnSchemaGenerator' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Diagnostics.ProcessStartInfo.ArgumentList.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Diagnostics.ProcessStartInfo.StandardInputEncoding.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Diagnostics.ProcessStartInfo.StandardInputEncoding.set(System.Text.Encoding)' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Diagnostics.StackFrameExtensions' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Diagnostics.Tracing.EventCounter' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Diagnostics.Tracing.EventListener.add_EventSourceCreated(System.EventHandler<System.Diagnostics.Tracing.EventSourceCreatedEventArgs>)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Diagnostics.Tracing.EventListener.add_EventWritten(System.EventHandler<System.Diagnostics.Tracing.EventWrittenEventArgs>)' does not exist in the implementation but it does exist in the contract.
+CannotMakeMemberAbstract : Member 'System.Diagnostics.Tracing.EventListener.OnEventWritten(System.Diagnostics.Tracing.EventWrittenEventArgs)' is abstract in the implementation but is not abstract in the contract.
+MembersMustExist : Member 'System.Diagnostics.Tracing.EventListener.remove_EventSourceCreated(System.EventHandler<System.Diagnostics.Tracing.EventSourceCreatedEventArgs>)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Diagnostics.Tracing.EventListener.remove_EventWritten(System.EventHandler<System.Diagnostics.Tracing.EventWrittenEventArgs>)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.Diagnostics.Tracing.EventSource.add_EventCommandExecuted(System.EventHandler<System.Diagnostics.Tracing.EventCommandEventArgs>)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.Diagnostics.Tracing.EventSource.remove_EventCommandExecuted(System.EventHandler<System.Diagnostics.Tracing.EventCommandEventArgs>)' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'System.Diagnostics.Tracing.EventSourceCreatedEventArgs' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Globalization.GlobalizationExtensions' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.Linq.Enumerable.Append<TSource>(System.Collections.Generic.IEnumerable<TSource>, TSource)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.Linq.Enumerable.Prepend<TSource>(System.Collections.Generic.IEnumerable<TSource>, TSource)' does not exist in the implementation but it does exist in the contract.
@@ -51,4 +60,4 @@ MembersMustExist : Member 'System.Text.RegularExpressions.Regex.Caps.set(System.
 TypesMustExist : Type 'System.Threading.PreAllocatedOverlapped' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Threading.ThreadPoolBoundHandle' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Xml.XPath.XDocumentExtensions' does not exist in the implementation but it does exist in the contract.
-Total Issues: 52
+Total Issues: 61

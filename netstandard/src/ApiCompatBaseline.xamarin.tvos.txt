@@ -1,1 +1,12 @@
-Total Issues: 0
+Compat issues with assembly netstandard:
+MembersMustExist : Member 'System.Diagnostics.ProcessStartInfo.ArgumentList.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Diagnostics.ProcessStartInfo.StandardInputEncoding.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Diagnostics.ProcessStartInfo.StandardInputEncoding.set(System.Text.Encoding)' does not exist in the implementation but it does exist in the contract.
+CannotRemoveBaseTypeOrInterface : Type 'System.Diagnostics.Tracing.EventCounter' does not implement interface 'System.IDisposable' in the implementation but it does in the contract.
+MembersMustExist : Member 'System.Diagnostics.Tracing.EventCounter.Dispose()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Diagnostics.Tracing.EventListener.add_EventSourceCreated(System.EventHandler<System.Diagnostics.Tracing.EventSourceCreatedEventArgs>)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Diagnostics.Tracing.EventListener.add_EventWritten(System.EventHandler<System.Diagnostics.Tracing.EventWrittenEventArgs>)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Diagnostics.Tracing.EventListener.remove_EventSourceCreated(System.EventHandler<System.Diagnostics.Tracing.EventSourceCreatedEventArgs>)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Diagnostics.Tracing.EventListener.remove_EventWritten(System.EventHandler<System.Diagnostics.Tracing.EventWrittenEventArgs>)' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'System.Diagnostics.Tracing.EventSourceCreatedEventArgs' does not exist in the implementation but it does exist in the contract.
+Total Issues: 10
