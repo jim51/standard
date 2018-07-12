@@ -1,1 +1,8 @@
-Total Issues: 0
+Compat issues with assembly netstandard:
+MembersMustExist : Member 'System.Threading.CancellationTokenRegistration.Token.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Threading.Interlocked.MemoryBarrierProcessWide()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Threading.LazyInitializer.EnsureInitialized<T>(T, System.Object, System.Func<T>)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Threading.Thread.GetCurrentProcessorId()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Threading.ThreadPool.QueueUserWorkItem<TState>(System.Action<TState>, TState, System.Boolean)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Threading.Tasks.TaskCanceledException..ctor(System.String, System.Exception, System.Threading.CancellationToken)' does not exist in the implementation but it does exist in the contract.
+Total Issues: 6
