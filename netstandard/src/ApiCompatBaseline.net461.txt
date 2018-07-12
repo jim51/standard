@@ -254,6 +254,8 @@ MembersMustExist : Member 'System.Numerics.BigInteger.TryFormat(System.Span<Syst
 MembersMustExist : Member 'System.Numerics.BigInteger.TryParse(System.ReadOnlySpan<System.Char>, System.Globalization.NumberStyles, System.IFormatProvider, System.Numerics.BigInteger)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.Numerics.BigInteger.TryParse(System.ReadOnlySpan<System.Char>, System.Numerics.BigInteger)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.Numerics.BigInteger.TryWriteBytes(System.Span<System.Byte>, System.Int32, System.Boolean, System.Boolean)' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'System.Numerics.Vector' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'System.Numerics.Vector<T>' does not exist in the implementation but it does exist in the contract.
 TypeCannotChangeClassification : Type 'System.Reflection.ParameterModifier' is marked as readonly in the contract so it must also be marked readonly in the implementation.
 MembersMustExist : Member 'System.Reflection.TypeDelegator.IsByRefLike.get()' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Runtime.CompilerServices.AsyncMethodBuilderAttribute' does not exist in the implementation but it does exist in the contract.
@@ -367,4 +369,4 @@ TypesMustExist : Type 'System.Threading.Tasks.Sources.IValueTaskSource<TResult>'
 TypesMustExist : Type 'System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Threading.Tasks.Sources.ValueTaskSourceStatus' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Xml.XPath.XDocumentExtensions' does not exist in the implementation but it does exist in the contract.
-Total Issues: 368
+Total Issues: 370
