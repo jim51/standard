@@ -262,6 +262,27 @@ MembersMustExist : Member 'System.Reflection.TypeDelegator.IsGenericTypeParamete
 MembersMustExist : Member 'System.Reflection.TypeDelegator.IsTypeDefinition.get()' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.Reflection.TypeDelegator.IsVariableBoundArray.get()' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Reflection.TypeExtensions' does not exist in the implementation but it does exist in the contract.
+CannotMakeTypeAbstract : Type 'System.Reflection.Emit.ConstructorBuilder' is abstract in the implementation but is not abstract in the contract.
+TypesMustExist : Type 'System.Reflection.Emit.DynamicMethod' does not exist in the implementation but it does exist in the contract.
+CannotMakeTypeAbstract : Type 'System.Reflection.Emit.EnumBuilder' is abstract in the implementation but is not abstract in the contract.
+MembersMustExist : Member 'System.Reflection.Emit.EnumBuilder.IsByRefLike.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Reflection.Emit.EnumBuilder.IsTypeDefinition.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Reflection.Emit.EnumBuilder.IsVariableBoundArray.get()' does not exist in the implementation but it does exist in the contract.
+CannotMakeTypeAbstract : Type 'System.Reflection.Emit.FieldBuilder' is abstract in the implementation but is not abstract in the contract.
+CannotMakeTypeAbstract : Type 'System.Reflection.Emit.GenericTypeParameterBuilder' is abstract in the implementation but is not abstract in the contract.
+MembersMustExist : Member 'System.Reflection.Emit.GenericTypeParameterBuilder.IsByRefLike.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Reflection.Emit.GenericTypeParameterBuilder.IsTypeDefinition.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Reflection.Emit.GenericTypeParameterBuilder.IsVariableBoundArray.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Reflection.Emit.ILGenerator.EmitCalli(System.Reflection.Emit.OpCode, System.Runtime.InteropServices.CallingConvention, System.Type, System.Type[])' does not exist in the implementation but it does exist in the contract.
+CannotMakeTypeAbstract : Type 'System.Reflection.Emit.MethodBuilder' is abstract in the implementation but is not abstract in the contract.
+MembersMustExist : Member 'System.Reflection.Emit.MethodBuilder.IsConstructedGenericMethod.get()' does not exist in the implementation but it does exist in the contract.
+CannotMakeTypeAbstract : Type 'System.Reflection.Emit.ModuleBuilder' is abstract in the implementation but is not abstract in the contract.
+CannotMakeTypeAbstract : Type 'System.Reflection.Emit.PropertyBuilder' is abstract in the implementation but is not abstract in the contract.
+CannotMakeTypeAbstract : Type 'System.Reflection.Emit.TypeBuilder' is abstract in the implementation but is not abstract in the contract.
+MembersMustExist : Member 'System.Reflection.Emit.TypeBuilder.CreateType()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Reflection.Emit.TypeBuilder.IsByRefLike.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Reflection.Emit.TypeBuilder.IsTypeDefinition.get()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Reflection.Emit.TypeBuilder.IsVariableBoundArray.get()' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder' does not exist in the implementation but it does exist in the contract.
 TypeCannotChangeClassification : Type 'System.Runtime.CompilerServices.ConfiguredTaskAwaitable' is marked as readonly in the contract so it must also be marked readonly in the implementation.
 TypeCannotChangeClassification : Type 'System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter' is marked as readonly in the contract so it must also be marked readonly in the implementation.
@@ -362,4 +383,4 @@ TypesMustExist : Type 'System.Threading.Tasks.Sources.IValueTaskSource' does not
 TypesMustExist : Type 'System.Threading.Tasks.Sources.IValueTaskSource<TResult>' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Threading.Tasks.Sources.ValueTaskSourceStatus' does not exist in the implementation but it does exist in the contract.
-Total Issues: 363
+Total Issues: 384

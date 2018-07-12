@@ -74,3 +74,4 @@ T:System.Reflection.MethodInfoExtensions
 T:System.Reflection.ModuleExtensions
 T:System.Reflection.PropertyInfoExtensions
 T:System.Reflection.TypeExtensions
+T:System.Reflection.Emit.DynamicMethod
