@@ -213,6 +213,7 @@ namespace System.Xml.XPath
         public override object ValueAs(System.Type returnType, System.Xml.IXmlNamespaceResolver nsResolver) { throw null; }
         public virtual void WriteSubtree(System.Xml.XmlWriter writer) { }
     }
+    [System.Diagnostics.DebuggerDisplayAttribute("Position={CurrentPosition}, Current={debuggerDisplayProxy}")]
     public abstract partial class XPathNodeIterator : System.Collections.IEnumerable, System.ICloneable
     {
         protected XPathNodeIterator() { }
