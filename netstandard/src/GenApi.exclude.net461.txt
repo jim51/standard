@@ -66,3 +66,8 @@ T:System.Runtime.InteropServices.MemoryMarshal
 T:System.Span`1
 T:System.Threading.Tasks.ValueTask
 T:System.Threading.Tasks.ValueTask`1
+T:System.Security.Cryptography.ECDiffieHellman
+T:System.Security.Cryptography.X509Certificates.CertificateRequest
+T:System.Security.Cryptography.X509Certificates.DSACertificateExtensions
+T:System.Security.Cryptography.X509Certificates.SubjectAlternativeNameBuilder
+T:System.Security.Cryptography.X509Certificates.X509SignatureGenerator
