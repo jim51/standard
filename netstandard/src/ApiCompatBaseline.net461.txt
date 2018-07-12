@@ -4,6 +4,12 @@ MembersMustExist : Member 'System.AppContext.TargetFrameworkName.get()' does not
 TypesMustExist : Type 'System.StringNormalizationExtensions' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Data.Common.DbColumn' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Data.Common.DbDataReaderExtensions' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Data.Common.DbProviderFactories.GetProviderInvariantNames()' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Data.Common.DbProviderFactories.RegisterFactory(System.String, System.Data.Common.DbProviderFactory)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Data.Common.DbProviderFactories.RegisterFactory(System.String, System.String)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Data.Common.DbProviderFactories.RegisterFactory(System.String, System.Type)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Data.Common.DbProviderFactories.TryGetFactory(System.String, System.Data.Common.DbProviderFactory)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Data.Common.DbProviderFactories.UnregisterFactory(System.String)' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Data.Common.IDbColumnSchemaGenerator' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Diagnostics.StackFrameExtensions' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Diagnostics.Tracing.EventCounter' does not exist in the implementation but it does exist in the contract.
@@ -51,4 +57,4 @@ MembersMustExist : Member 'System.Text.RegularExpressions.Regex.Caps.set(System.
 TypesMustExist : Type 'System.Threading.PreAllocatedOverlapped' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Threading.ThreadPoolBoundHandle' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Xml.XPath.XDocumentExtensions' does not exist in the implementation but it does exist in the contract.
-Total Issues: 52
+Total Issues: 58
