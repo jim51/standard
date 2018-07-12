@@ -155,7 +155,30 @@ TypeCannotChangeClassification : Type 'System.Diagnostics.SymbolStore.SymbolToke
 TypesMustExist : Type 'System.Diagnostics.Tracing.EventCounter' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.Diagnostics.Tracing.EventSource.add_EventCommandExecuted(System.EventHandler<System.Diagnostics.Tracing.EventCommandEventArgs>)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.Diagnostics.Tracing.EventSource.remove_EventCommandExecuted(System.EventHandler<System.Diagnostics.Tracing.EventCommandEventArgs>)' does not exist in the implementation but it does exist in the contract.
+CannotRemoveBaseTypeOrInterface : Type 'System.Drawing.Color' does not implement interface 'System.IEquatable<System.Drawing.Color>' in the implementation but it does in the contract.
 TypeCannotChangeClassification : Type 'System.Drawing.Color' is marked as readonly in the contract so it must also be marked readonly in the implementation.
+MembersMustExist : Member 'System.Drawing.Color.Equals(System.Drawing.Color)' does not exist in the implementation but it does exist in the contract.
+CannotRemoveBaseTypeOrInterface : Type 'System.Drawing.Point' does not implement interface 'System.IEquatable<System.Drawing.Point>' in the implementation but it does in the contract.
+MembersMustExist : Member 'System.Drawing.Point.Equals(System.Drawing.Point)' does not exist in the implementation but it does exist in the contract.
+CannotRemoveBaseTypeOrInterface : Type 'System.Drawing.PointF' does not implement interface 'System.IEquatable<System.Drawing.PointF>' in the implementation but it does in the contract.
+MembersMustExist : Member 'System.Drawing.PointF.Equals(System.Drawing.PointF)' does not exist in the implementation but it does exist in the contract.
+CannotRemoveBaseTypeOrInterface : Type 'System.Drawing.Rectangle' does not implement interface 'System.IEquatable<System.Drawing.Rectangle>' in the implementation but it does in the contract.
+MembersMustExist : Member 'System.Drawing.Rectangle.Equals(System.Drawing.Rectangle)' does not exist in the implementation but it does exist in the contract.
+CannotRemoveBaseTypeOrInterface : Type 'System.Drawing.RectangleF' does not implement interface 'System.IEquatable<System.Drawing.RectangleF>' in the implementation but it does in the contract.
+MembersMustExist : Member 'System.Drawing.RectangleF.Equals(System.Drawing.RectangleF)' does not exist in the implementation but it does exist in the contract.
+CannotRemoveBaseTypeOrInterface : Type 'System.Drawing.Size' does not implement interface 'System.IEquatable<System.Drawing.Size>' in the implementation but it does in the contract.
+MembersMustExist : Member 'System.Drawing.Size.Equals(System.Drawing.Size)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Drawing.Size.op_Division(System.Drawing.Size, System.Int32)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Drawing.Size.op_Division(System.Drawing.Size, System.Single)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Drawing.Size.op_Multiply(System.Drawing.Size, System.Int32)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Drawing.Size.op_Multiply(System.Drawing.Size, System.Single)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Drawing.Size.op_Multiply(System.Int32, System.Drawing.Size)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Drawing.Size.op_Multiply(System.Single, System.Drawing.Size)' does not exist in the implementation but it does exist in the contract.
+CannotRemoveBaseTypeOrInterface : Type 'System.Drawing.SizeF' does not implement interface 'System.IEquatable<System.Drawing.SizeF>' in the implementation but it does in the contract.
+MembersMustExist : Member 'System.Drawing.SizeF.Equals(System.Drawing.SizeF)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Drawing.SizeF.op_Division(System.Drawing.SizeF, System.Single)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Drawing.SizeF.op_Multiply(System.Drawing.SizeF, System.Single)' does not exist in the implementation but it does exist in the contract.
+MembersMustExist : Member 'System.Drawing.SizeF.op_Multiply(System.Single, System.Drawing.SizeF)' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Globalization.GlobalizationExtensions' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.IO.BinaryReader.Read(System.Span<System.Byte>)' does not exist in the implementation but it does exist in the contract.
 MembersMustExist : Member 'System.IO.BinaryReader.Read(System.Span<System.Char>)' does not exist in the implementation but it does exist in the contract.
@@ -367,4 +390,4 @@ TypesMustExist : Type 'System.Threading.Tasks.Sources.IValueTaskSource<TResult>'
 TypesMustExist : Type 'System.Threading.Tasks.Sources.ValueTaskSourceOnCompletedFlags' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Threading.Tasks.Sources.ValueTaskSourceStatus' does not exist in the implementation but it does exist in the contract.
 TypesMustExist : Type 'System.Xml.XPath.XDocumentExtensions' does not exist in the implementation but it does exist in the contract.
-Total Issues: 368
+Total Issues: 391
