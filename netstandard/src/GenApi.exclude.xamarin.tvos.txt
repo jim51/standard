@@ -1,0 +1,5 @@
+T:System.Drawing.ColorConverter
+T:System.Drawing.PointConverter
+T:System.Drawing.RectangleConverter
+T:System.Drawing.SizeConverter
+T:System.Drawing.SizeFConverter

@@ -1,1 +1,7 @@
-Total Issues: 0
+Compat issues with assembly netstandard:
+TypesMustExist : Type 'System.Drawing.ColorConverter' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'System.Drawing.PointConverter' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'System.Drawing.RectangleConverter' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'System.Drawing.SizeConverter' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'System.Drawing.SizeFConverter' does not exist in the implementation but it does exist in the contract.
+Total Issues: 5
